@@ -23,7 +23,7 @@ The option exists to go open hardware for this part, by changing to the ATmega16
 
 ## UNO `R3` Additional SDA/SCL pins (D14/15)
 
-I briefly considered adding the extra Arduino pins, beside D13, for I2C SDA and SCL. But since these already appear on the, "analog in" pins 4 an 5, I see no point in doing so. Instead, I have simply added silk text SDA and SCL next to analog pins 4 and 5. ([r79](https://code.google.com/p/kicad-freakduino/source/detail?r=79))
+I briefly considered adding the extra Arduino pins, beside D13, for I2C SDA and SCL. But since these already appear on the, "analog in" pins 4 an 5, I see no point in doing so. Instead, I have simply added silk text SDA and SCL next to analog pins 4 and 5. (r79)
 
 ## Custom Routing and Lots of Learning around the RF Section
 
