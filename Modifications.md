@@ -1,19 +1,19 @@
-# Modifications (compared to authentic Freakduino) #
+# Modifications (compared to authentic Freakduino)
 
 ## DC-DC Voltage Up Converter ##
 
-Originally, I couldn't find the TO-98 (through-hole) packaged Holtek HT7750A, at all. So I researched and found part of similar function, the Texas Instruments TPS61222, in it's tiny SC-70 SMD package.
+Originally, I couldn't find the TO-98 (through-hole) packaged Holtek HT7750A, at all. So, I found part of similar function, the Texas Instruments TPS61222, in it's tiny SC-70 SMD package.
 
-Later, I found and acquired the Holtek part from a Chinese supplier. But I decided to stick with the SMD part anyway, because I simply prefer SMD to through-hole components, these days.
+Later, I found and acquired the Holtek part from a Chinese supplier. But I decided to stick with the SMD part anyway, simply because I prefer SMD to through-hole components.
 
 
-## Digital Level Shifter — GTL2003 instead of FXMA108 ##
+## Digital Level Shifter — GTL2003 instead of FXMA108
 
 Again, I originally could not find a supplier for the FXMA108 and again, finally found and acquired the part from China. But the GTL2003 is an easer part to handle by hand and I'd already done the routing design by then. So I'm sticking with that, too.
 
 Note that this part's equivalent /ENABLE pin has reverse sense, to the FXMA108. The the circuit around JP2 was modified accordingly.
 
-## FT232RL USB-to-Serial Converter ##
+## FT232RL USB-to-Serial Converter
 
 The option exists to go open hardware for this part, by changing to the ATmega16U2, with a 16MHz xtal and firmware from the Arduino archives. I think it would be a very tight squeeze to get the AT'16U2 on the board, mostly due to the need for ISP programming pads. But it does look doable, maybe.
 
@@ -21,11 +21,11 @@ The option exists to go open hardware for this part, by changing to the ATmega16
 
 
 
-## UNO `R3` Additional SDA/SCL pins (D14/15) ##
+## UNO `R3` Additional SDA/SCL pins (D14/15)
 
 I briefly considered adding the extra Arduino pins, beside D13, for I2C SDA and SCL. But since these already appear on the, "analog in" pins 4 an 5, I see no point in doing so. Instead, I have simply added silk text SDA and SCL next to analog pins 4 and 5. ([r79](https://code.google.com/p/kicad-freakduino/source/detail?r=79))
 
-## Custom Routing and Lots of Learning around the RF Section ##
+## Custom Routing and Lots of Learning around the RF Section
 
 I never bothered looking for the original author's CAD files for the PCB, because I wanted to gain my own experience in routing up a board of this nature -- especially regards the 2.4GHz RF section.
 
