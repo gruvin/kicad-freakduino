@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name freakduino)(type Legacy)(uri /home/bryan/vista/projects/kicad-freakduino/hardware/share/library/freakduino.lib)(options "")(descr ""))
+)
