@@ -1,6 +1,6 @@
 (export (version D)
   (design
-    (source /home/bryan/vista/projects/kicad-freakduino/trunk/hardware/freakduino.sch)
+    (source "$(KIPRJMOD)/freakduino.sch")
     (date "Mon 03 Mar 2014 02:28:46 PM NZDT")
     (tool "eeschema (2013-07-24 BZR 4024)-stable"))
   (components
